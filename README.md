@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mirova Studio
 
-## Getting Started
+![Mirova Studio Presentation](public/images/hero.svg)
 
-First, run the development server:
+## Where Silence Shapes the Finest Forms
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Mirova Studio** is a high-end furniture and interior design studio born from the belief that true luxury does not shout; it breathes within the quiet spaces of a well-considered home. This project is a curated, minimalist landing page intended to convey warmth, precision, and an unyielding commitment to craftsmanship.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### The Vision
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The design language of Mirova is an exercise in reduction, stripping away the superfluous to reveal the essence of form. Through surgical precision, premium raw materials, and an aesthetic defined by its timelessness, we craft pieces that outlast fleeting trends.
 
-## Learn More
+### Experience Architecture
 
-To learn more about Next.js, take a look at the following resources:
+The digital experience is crafted sequentially into distinct, curated sections:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### I. The Monolith
+A grand introduction to the studio. Here, the visitor is greeted with high-impact imagery and the foundational philosophy of Mirova—setting the tone for a deep, textural experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### II. The Philosophy (Editorial Feature)
+*"Reduction as Artistry."*
+A narrative-driven section dissecting the dialogue between raw material and refined geometry. This space transitions the user from an observer to an appreciator of the craft.
 
-## Deploy on Vercel
+#### III. Selected Works
+A curated exhibition of our signature pieces. This gallery highlights our focus on sustainable solid woods, rare Italian travertines, and full-grain aniline leathers.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### IV. The Atelier
+An immersive look into our process: *Design Begins With You — and Ends in Timeless Form.* Here, we delve into the execution, exploring the sixty hours of hand-finishing and the master artisans who dedicate their lives to this craft.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### V. Impressions
+Stories of transformation from our patrons, echoing the quiet authority and lasting impact a singular piece of furniture can bring into a space.
+
+---
+
+### Technology & Aesthetics
+
+This project is an exercise in digital artistry, translating physical craftsmanship into a web experience. Built with performance and elegance in mind, it features:
+
+- **Tailored Typography:** A dance between editorial serifs and modernist, quiet sans-serifs, evoking a premium magazine layout.
+- **Kinetic Elegance:** Purposefully subtle scroll animations and fade reveals ensure the digital medium matches the physical craftsmanship.
+- **Architectural Layouts:** Generous negative space, asymmetric editorial features, and quiet grids that let the work speak for itself.
+
+*Mirova is more than furniture; it is an enduring philosophy written in solid form.*

@@ -67,9 +67,10 @@ export default function Nav() {
 
         {/* Actions (Right) */}
         <div className="flex-1 flex justify-end items-center gap-6">
-          <button className="text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors flex items-center">
+          <a href="tel:0553910194" className="text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors flex items-center gap-2">
             <span className="material-symbols-outlined">phone</span>
-          </button>
+            <span className="font-label text-[0.625rem] tracking-[0.1rem] hidden sm:block">0553910194</span>
+          </a>
           <button className="text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors flex items-center">
             <span className="material-symbols-outlined">shopping_bag</span>
           </button>

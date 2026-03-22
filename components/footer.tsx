@@ -26,19 +26,25 @@ export default function Footer() {
           </span>
           <Link
             className="text-[#5f5e5e] hover:underline underline-offset-8 transition-all w-fit"
-            href="#"
+            href="https://www.instagram.com/abdou.rah9/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Instagram
           </Link>
           <Link
             className="text-[#5f5e5e] hover:underline underline-offset-8 transition-all w-fit"
-            href="#"
+            href="https://rahmoun-rayan-abderrahim.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Pinterest
           </Link>
           <Link
             className="text-[#5f5e5e] hover:underline underline-offset-8 transition-all w-fit"
-            href="#"
+            href="https://rahmoun-rayan-abderrahim.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Journal
           </Link>
