@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary: #735b3a;
+  --color-outline-variant: #afb3b0;
+  --color-on-tertiary: #fff8f2;
+  --color-on-tertiary-fixed: #4f4940;
+  --color-secondary-container: #feddb3;
+  --color-error-container: #fe8983;
+  --color-on-secondary: #fff8f2;
+  --color-tertiary-fixed-dim: #efe4d7;
+  --color-primary-fixed-dim: #d6d4d3;
+  --color-on-tertiary-container: #625b51;
+  --color-on-secondary-fixed: #503c1d;
+  --color-surface-dim: #d6dbd7;
+  --color-inverse-primary: #ffffff;
+  --color-outline: #777c79;
+  --color-background: #faf9f7;
+  --color-on-primary-container: #525151;
+  --color-secondary-fixed-dim: #efd0a6;
+  --color-on-error: #fff7f6;
+  --color-on-background: #2f3331;
+  --color-on-secondary-fixed-variant: #6f5836;
+  --color-inverse-on-surface: #9d9d9b;
+  --color-tertiary-dim: #595249;
+  --color-surface-container-highest: #e0e3e0;
+  --color-secondary-fixed: #feddb3;
+  --color-on-primary-fixed-variant: #5c5b5b;
+  --color-on-secondary-container: #644e2e;
+  --color-surface-container-high: #e6e9e6;
+  --color-tertiary-container: #fdf2e5;
+  --color-surface-container: #edeeeb;
+  --color-surface-container-low: #f3f4f1;
+  --color-secondary-dim: #664f2f;
+  --color-on-error-container: #752121;
+  --color-inverse-surface: #0d0e0e;
+  --color-surface: #faf9f7;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #2f3331;
+  --color-on-surface-variant: #5c605d;
+  --color-error-dim: #4e0309;
+  --color-primary-container: #e5e2e1;
+  --color-error: #9f403d;
+  --color-surface-tint: #5f5e5e;
+  --color-primary: #5f5e5e;
+  --color-on-tertiary-fixed-variant: #6d655b;
+  --color-primary-dim: #535252;
+  --color-on-primary: #faf7f6;
+  --color-tertiary: #655e54;
+  --color-surface-variant: #e0e3e0;
+  --color-primary-fixed: #e5e2e1;
+  --color-surface-bright: #faf9f7;
+  --color-tertiary-fixed: #fdf2e5;
+  --color-on-primary-fixed: #403f3f;
+
+  --font-headline: var(--font-noto-serif), serif;
+  --font-body: var(--font-manrope), sans-serif;
+  --font-label: var(--font-manrope), sans-serif;
+  --font-serif-alt: var(--font-cormorant-garamond), serif;
+  --font-sans-alt: var(--font-dm-sans), sans-serif;
+
+  --radius-DEFAULT: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-full: 9999px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  font-size: 20px;
+}
+
+body {
+  font-family: var(--font-manrope), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.serif-italic {
+  font-family: var(--font-noto-serif), serif;
+  font-style: italic;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}

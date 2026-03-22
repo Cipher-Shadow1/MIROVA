@@ -1,0 +1,377 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MIROVA ATELIER | The Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary": "#735b3a",
+                        "outline-variant": "#afb3b0",
+                        "on-tertiary": "#fff8f2",
+                        "on-tertiary-fixed": "#4f4940",
+                        "secondary-container": "#feddb3",
+                        "error-container": "#fe8983",
+                        "on-secondary": "#fff8f2",
+                        "tertiary-fixed-dim": "#efe4d7",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "on-tertiary-container": "#625b51",
+                        "on-secondary-fixed": "#503c1d",
+                        "surface-dim": "#d6dbd7",
+                        "inverse-primary": "#ffffff",
+                        "outline": "#777c79",
+                        "background": "#faf9f7",
+                        "on-primary-container": "#525151",
+                        "secondary-fixed-dim": "#efd0a6",
+                        "on-error": "#fff7f6",
+                        "on-background": "#2f3331",
+                        "on-secondary-fixed-variant": "#6f5836",
+                        "inverse-on-surface": "#9d9d9b",
+                        "tertiary-dim": "#595249",
+                        "surface-container-highest": "#e0e3e0",
+                        "secondary-fixed": "#feddb3",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "on-secondary-container": "#644e2e",
+                        "surface-container-high": "#e6e9e6",
+                        "tertiary-container": "#fdf2e5",
+                        "surface-container": "#edeeeb",
+                        "surface-container-low": "#f3f4f1",
+                        "secondary-dim": "#664f2f",
+                        "on-error-container": "#752121",
+                        "inverse-surface": "#0d0e0e",
+                        "surface": "#faf9f7",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#2f3331",
+                        "on-surface-variant": "#5c605d",
+                        "error-dim": "#4e0309",
+                        "primary-container": "#e5e2e1",
+                        "error": "#9f403d",
+                        "surface-tint": "#5f5e5e",
+                        "primary": "#5f5e5e",
+                        "on-tertiary-fixed-variant": "#6d655b",
+                        "primary-dim": "#535252",
+                        "on-primary": "#faf7f6",
+                        "tertiary": "#655e54",
+                        "surface-variant": "#e0e3e0",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-bright": "#faf9f7",
+                        "tertiary-fixed": "#fdf2e5",
+                        "on-primary-fixed": "#403f3f"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif-italic { font-family: 'Noto Serif'; font-style: italic; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+            animation: scroll 30s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary/20">
+<!-- Top Marquee -->
+<div class="w-full bg-surface-container-low py-3 flex justify-center items-center overflow-hidden">
+<p class="font-label text-[0.625rem] tracking-[0.2rem] text-on-surface-variant uppercase" style="">
+            RESERVED FOR YOUR FIRST ORDER ✦ A 10% WELCOME PRIVILEGE
+        </p>
+</div>
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-[#faf9f7]/80 backdrop-blur-xl flex justify-between items-center w-full px-12 md:px-20 py-6 transition-all duration-300">
+<!-- Logo -->
+<div class="flex-1">
+<a class="text-2xl font-headline tracking-tighter text-on-surface" href="#" style="">MIROVA</a>
+</div>
+<!-- Navigation Links (Center) -->
+<nav class="hidden md:flex gap-12 flex-1 justify-center">
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-[#735b3a] border-b border-[#735b3a]/20 pb-1 hover:text-[#1A1A1A] transition-colors duration-300" href="#" style="">Collections</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors duration-300" href="#" style="">Bespoke</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors duration-300" href="#" style="">Atelier</a>
+<a class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors duration-300" href="#" style="">About</a>
+</nav>
+<!-- Actions (Right) -->
+<div class="flex-1 flex justify-end items-center gap-6">
+<button class="text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors flex items-center" style="">
+<span class="material-symbols-outlined" data-icon="phone" style="">phone</span>
+</button>
+<button class="text-[#5f5e5e] hover:text-[#1A1A1A] transition-colors flex items-center" style="">
+<span class="material-symbols-outlined" data-icon="shopping_bag" style="">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="relative pt-20 pb-40 px-6 md:px-20 flex flex-col items-center">
+<!-- Headline -->
+<div class="max-w-5xl text-center mb-24">
+<h1 class="text-5xl md:text-7xl font-headline leading-[1.1] tracking-tighter text-on-surface" style="">
+                    Where <span class="serif-italic" style="">Silence</span> Shapes the&nbsp;<br>Finest Forms.
+                </h1>
+</div>
+<!-- Main Imagery and Floating Card Container -->
+<div class="relative w-full max-w-[1440px] aspect-[16/9]">
+<img class="w-full h-full object-cover" data-alt="Minimalist high-end interior architecture with sunlight and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1IOPlP2LKEh426ipxPf19BpFhrlL8-p325jqBwMUdkHh2dOTPBnedYaX3rZurat8T-GD7bFDj25f3jpC1m_U4P0giu1MetyQ6DPfvrBechMwHQPYSH_v4xvBI9v5B0Fcau29hZi7KAXSan22D226zIXjtZXnrHNLCezM1JDTI5-03ZghdhykV7Ov93zY28FhMnLFL962kLC2K2R5e-5Ve5VchE4veFYJ4OWMhd-NOtVLeD2jYS118xUo-GR-QX-YjZpgsHMeOsa0" style="">
+<!-- Floating Product Card -->
+<div class="absolute -bottom-16 right-0 md:right-24 w-full md:w-[400px] bg-surface-container-lowest p-10 md:p-12 shadow-[0_20px_40px_rgba(47,51,49,0.06)]">
+<div class="mb-8">
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-on-surface-variant block mb-4" style="">New Arrival</span>
+<h2 class="text-2xl font-headline tracking-tight text-on-surface mb-2" style="">THE MONOLITH CHAIR</h2>
+<p class="text-lg font-body text-secondary" style="">$2,450</p>
+</div>
+<div class="flex flex-col gap-3">
+<button class="w-full py-4 bg-primary text-on-primary font-label text-[0.6875rem] uppercase tracking-[0.1rem] transition-all hover:bg-primary-dim" style="">
+                            ADD TO CART
+                        </button>
+<button class="w-full py-4 border border-outline-variant/30 text-on-surface font-label text-[0.6875rem] uppercase tracking-[0.1rem] transition-all hover:bg-surface-container-low" style="">
+                            VIEW ITEM
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Feature (Asymmetric) -->
+<section class="py-40 bg-surface-container-low px-6 md:px-20">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-20 items-center">
+<div class="md:col-span-5 md:pr-12">
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.2rem] text-secondary mb-6 block" style="">01 / The Philosophy</span>
+<h3 class="text-4xl font-headline leading-tight mb-8" style="">
+                        Reduction as <span class="serif-italic" style="">Artistry</span>.
+                    </h3>
+<p class="text-on-surface-variant leading-relaxed mb-10 text-lg" style="">
+                        Each Mirova piece is a dialogue between raw material and refined geometry. We believe that true luxury does not shout; it breathes within the quiet spaces of a well-considered home.
+                    </p>
+<a class="inline-block font-label text-[0.6875rem] uppercase tracking-[0.1rem] text-on-surface border-b border-on-surface/20 pb-2 hover:border-on-surface transition-all" href="#" style="">
+                        Discover the Atelier
+                    </a>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-8">
+<div class="pt-24">
+<img class="w-full aspect-[3/4] object-cover" data-alt="Detail of a textured stone chair back" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4g78GoK8KggRNPnH8xPm6kvRg7wavCD8kHGgvFtvqIdOeKur-lQVLKWoaYtPhWEk5ZM6DtFxKo7LmnoCgSPimkTVM107pKnNfSmTKakIGzfLKu1owyvWUWzJ_-bc7BpDXbycALy8zMGJ9xFrHFOwNdWALl8744QQ5fBVZUat9-FmrLY8hWC8Eot6B70K31WoqXF3OJz8L3zI7-CDJkJcqPwMbnvN22g2KJNZiR9Z3OGqN580CaTyXx4ghdyJA6IFARqPtaWEl_pA" style="">
+</div>
+<div>
+<img class="w-full aspect-[3/4] object-cover" data-alt="Minimalist wooden furniture detail in sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU3902NbZZcYNc6qkeHJVrnYm2TVkkDavPtGHc4amjVxD8q81eCHn3NJzgfeNtDIDLRLQ1k43K7FwqP29q6wkwiC_Z9gtcGbaQcELgNITaHRPTLz1s-tCuLO_17HPua5kxqLAUwMAPfj-EycHSTG0j1TWWSai6JulEVgma9vIrD0sTfmXvglW8xzX8_O14Lf3jDJJkY6wly1PX7VFva7jRHmRucWvuoOwnoKz7LB16x2ePCzsx6fFVJU26EOdwzanxudUJo739m_g" style="">
+</div>
+</div>
+</div>
+</section>
+<!-- Collection Showcase -->
+<section class="py-40 px-6 md:px-20">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h3 class="text-4xl font-headline" style="">Selected Works</h3>
+</div>
+<div class="flex gap-4">
+<button class="p-4 border border-outline-variant/20 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined" style="">west</span>
+</button>
+<button class="p-4 border border-outline-variant/20 hover:bg-surface-container-low transition-colors" style="">
+<span class="material-symbols-outlined" style="">east</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Item 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden bg-surface-bright mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern sculptural lounge chair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQzP6l3cSM1C7nnVcM_iuOtFRuChb0OJe6wQ75LzGc7IRVMNKjxw3HJJBTOIsuiTRb-2QY8_Qe7az9YwPsnRfWmQ-8ekFY3JWJ8MWi4H0XHkY7ElnkQ0xDx8dnTHRV1RtEX2A58NrqbiUggPqhVJkWLjewZZY-NNzFlvWEZxcvTSE1_myh7a3pUQW4NFEo8gUUWHjm_McebYJGcT8v-7_7LK3Pn05ESTveyHVHKY08um1h5yt4ZYHzNVMoOWgqRrhkpGbKL1x_jmE" style="">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[0.625rem] tracking-widest text-on-surface-variant uppercase mb-1" style="">Seating</p>
+<h4 class="text-lg font-headline" style="">VESSEL CHAIR</h4>
+</div>
+<p class="font-body text-secondary" style="">$3,100</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden bg-surface-bright mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Marble coffee table detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADPyLqfT-hLQhYvypYu1jb4HQ6XrauWj4cOASI1f1quzFYWXpDgAeyZTs2viR339rgmXevZwvSDR9OaauUI--ebsQIjDdQOVlNP0BI_7Q2HLHR3obyOxpAkgoE3vkRKV2meCmJ0muQqTmzGBhk3STHXSwcPLHupuiker5ugV_DX05vl9Ie1GMRPrxwknAS_1yGIm_-6xp7esHyesDg7JVb9zVoYYQjVpqyqaNIZThxZqTz_k9dWodNQl47q0DtC-MBTeWK6UzZuPU" style="">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[0.625rem] tracking-widest text-on-surface-variant uppercase mb-1" style="">Living</p>
+<h4 class="text-lg font-headline" style="">TRAVERTINE PLINTH</h4>
+</div>
+<p class="font-body text-secondary" style="">$1,850</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden bg-surface-bright mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist pendant lighting fixture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHUUiS8hMwz-alu68KxYW_sPk_b__h2MvIfFwF2lZWgfA6xTuVHfnwnV3BL0FwE3u8_EiuCSzliC4sG3MjZSdJPWqyxMOhUbxuflvIfcl-UNIaqPFL6iAIhmESeGPMmgmB2G10L_ilPFboC7xUCybkzV3dXwDNA-l4Rrb8-NdrJi2RWeKGebsQZoAQu5yDL-HDhurqMuc5xEFEKdB-Mv9w5FpfhtmLS_1tvW1NgLAk5rEUmcte-oM6IfqfIELQ1KbDZWSIj2Ap_yQ" style="">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[0.625rem] tracking-widest text-on-surface-variant uppercase mb-1" style="">Lighting</p>
+<h4 class="text-lg font-headline" style="">LUMEN ARC</h4>
+</div>
+<p class="font-body text-secondary" style="">$980</p>
+</div>
+</div>
+</div>
+</section>
+<!-- New Dark Craftsmanship Section -->
+<section class="bg-[#1A1A18] text-white w-full overflow-hidden">
+<!-- Top Marquee -->
+<div class="border-y border-white/10 py-4 flex items-center overflow-hidden whitespace-nowrap">
+<div class="flex animate-scroll">
+<p class="font-label text-[0.625rem] tracking-[0.2rem] uppercase px-8" style="">Crafting Silence into Form ✦ Traditional Techniques ✦ Modern Soul ✦ Crafting Silence into Form ✦ Traditional Techniques ✦ Modern Soul</p>
+<p class="font-label text-[0.625rem] tracking-[0.2rem] uppercase px-8" style="">Crafting Silence into Form ✦ Traditional Techniques ✦ Modern Soul ✦ Crafting Silence into Form ✦ Traditional Techniques ✦ Modern Soul</p>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center px-12 md:px-20 py-40">
+<!-- Left Column -->
+<div class="flex flex-col gap-16">
+<h2 class="text-4xl md:text-6xl font-headline leading-[1.15] tracking-tight" style="">
+                        Design Begins With You — and Ends in <span class="serif-italic" style="">Timeless Form.</span>
+</h2>
+<div class="w-full aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-90 contrast-110" data-alt="Close up of artisan hands working with raw materials" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM6zhq8wwS5lL5IVDkxcXPLAsf6Bw0iX31o-zQLGKDdN8o1HkO-X56XzbAXGwEPkzXR3KJEwE-aygOUQpbHUSe-UJYl2hK4lIkUraHztLro-yIbuWEZA8xgBfVCchHGwOhviFATsgFgp5lGazimIqzXCotfcxEtgaqAM5UMUQxbBe8BZy7JgFc_EhEu4119azqcdTB4IijTkPS2XWbfA8CdJNpgagKaI3djfYLRleHcpJJKktKkJpziHHy9bh1PJTvyEK-656IRso" style="">
+</div>
+</div>
+<!-- Right Column -->
+<div class="flex flex-col gap-12">
+<div class="group border-b border-white/10 pb-8">
+<h4 class="font-label text-[0.75rem] uppercase tracking-[0.2rem] mb-4 text-white/60 group-hover:text-white transition-colors" style="">Precision Craftsmanship</h4>
+<p class="font-body text-lg text-white/80 leading-relaxed max-w-md" style="">
+                            Every joint, every curve, and every finish is executed with surgical precision by master artisans who have dedicated decades to their craft.
+                        </p>
+</div>
+<div class="group border-b border-white/10 pb-8">
+<h4 class="font-label text-[0.75rem] uppercase tracking-[0.2rem] mb-4 text-white/60 group-hover:text-white transition-colors" style="">Premium Materials</h4>
+<p class="font-body text-lg text-white/80 leading-relaxed max-w-md" style="">
+                            We source only the most exceptional raw materials—from sustainable solid woods to rare Italian travertines and full-grain aniline leathers.
+                        </p>
+</div>
+<div class="group">
+<h4 class="font-label text-[0.75rem] uppercase tracking-[0.2rem] mb-4 text-white/60 group-hover:text-white transition-colors" style="">Minimalist Aesthetics</h4>
+<p class="font-body text-lg text-white/80 leading-relaxed max-w-md" style="">
+                            Our design language is one of reduction. We remove the superfluous until only the essence remains, creating pieces that outlast fleeting trends.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Bottom Marquee -->
+<div class="border-y border-white/10 py-4 flex items-center overflow-hidden whitespace-nowrap">
+<div class="flex animate-scroll" style="animation-direction: reverse;">
+<p class="font-label text-[0.625rem] tracking-[0.2rem] uppercase px-8" style="">Built for Longevity ✦ Materials of Origin ✦ The Human Touch ✦ Built for Longevity ✦ Materials of Origin ✦ The Human Touch</p>
+<p class="font-label text-[0.625rem] tracking-[0.2rem] uppercase px-8" style="">Built for Longevity ✦ Materials of Origin ✦ The Human Touch ✦ Built for Longevity ✦ Materials of Origin ✦ The Human Touch</p>
+</div>
+</div>
+</section>
+<!-- New Testimonials Section -->
+<section class="py-40 px-6 md:px-20 bg-surface">
+<div class="max-w-[1440px] mx-auto">
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.2rem] text-secondary mb-16 block text-center md:text-left" style="">CUSTOMER TESTIMONIAL</span>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-20 items-start">
+<!-- Left Column -->
+<div class="md:col-span-4">
+<h3 class="text-4xl md:text-5xl font-headline leading-[1.2] mb-8" style="">
+                            Shaped by Those Who <span class="serif-italic" style="">Live</span> With It.
+                        </h3>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed" style="">
+                            A home is a collection of stories. Our pieces are designed to become the quiet protagonists in your daily rituals, evolving and growing more beautiful with every passing year of use.
+                        </p>
+</div>
+<!-- Right Column: Testimonial Cards -->
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Light Card -->
+<div class="bg-surface-container-low p-12 flex flex-col justify-between h-full">
+<div>
+<span class="material-symbols-outlined text-secondary mb-8 scale-150" style="">format_quote</span>
+<p class="text-xl font-headline text-on-surface leading-relaxed italic mb-12" style="">
+                                    "The Monolith Chair has transformed my study. It's rare to find a piece that is both a sculptural statement and incredibly comfortable for long evenings of reading."
+                                </p>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Customer Profile" class="w-12 h-12 object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQMcaJTzVFTIPWgu6cvHILexucxCzP1sJxQhiyMU2zeV5kk1SjgTWX_hTX0AMaHgVAWUQHHkGSmTacf9hdK_5u9bkp3A3ShxGMa4Xm89m8eFoNfIc5UtxPbYWXxHNCgv1odHyqHH6q9c2Mwk45wEB0zd4uPN6pdPIZrFrwuC5G0z7AiCP7ddhsMSLrtXqsom6SJGy2dKkbQsMkqLi26gzRBqdfuFjA1P3HWSF-OVlJq-I4ISeyUmPJGO8yEXcgpWrTEA6zDWSochg" style="">
+<div>
+<h5 class="font-label text-[0.75rem] uppercase tracking-wider font-semibold text-on-surface" style="">Julian Thorne</h5>
+<p class="font-label text-[0.625rem] uppercase tracking-widest text-on-surface-variant" style="">Interior Architect</p>
+</div>
+</div>
+</div>
+<!-- Dark Card -->
+<div class="bg-[#1A1A18] p-12 flex flex-col justify-between h-full text-white">
+<div>
+<span class="material-symbols-outlined text-white/40 mb-8 scale-150" style="">format_quote</span>
+<p class="text-xl font-headline leading-relaxed italic mb-12" style="">
+                                    "Mirova is the antithesis of fast furniture. The attention to detail in the Lumen Arc lighting is something you have to see in person to truly appreciate the craftsmanship."
+                                </p>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Customer Profile" class="w-12 h-12 object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY_r-iA02Ibw8vKMTt7p8HWjy9pY7ebdYqS03wsaS0tWR6eVUJ_ZBmvriPRm7AsvnJJKD6JgmFcBzJSTR_HBB-pGlIW60kTu5U20sURbKGKmWlOomxqb2MSX4ZluD8BKupaQOAyRQrJpQUqXUOj8QzwEIFx03QU5hQVKL67UEuAuOSICClXoFwmkNmqVgLZGtuKIe4L3eqghE-udg_e0sM82Hk19EdwcWuuyPgZBfpvY5l6wfQNb5vcdPMdBsiDI8uR7Us3HiwUA8" style="">
+<div>
+<h5 class="font-label text-[0.75rem] uppercase tracking-wider font-semibold" style="">Elena Rossi</h5>
+<p class="font-label text-[0.625rem] uppercase tracking-widest text-white/50" style="">Art Curator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f4f1] w-full pt-24 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-20 px-12 md:px-24 w-full mb-24">
+<!-- Brand -->
+<div>
+<a class="text-lg font-headline tracking-tighter text-[#1A1A1A] block mb-6" href="#" style="">MIROVA</a>
+<p class="text-sm text-[#5f5e5e] leading-relaxed max-w-xs" style="">
+                    Curated furniture and objects for the modern atelier. Crafting silence into form since 2018.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-col gap-4">
+<span class="font-label text-[0.625rem] uppercase tracking-widest text-on-surface-variant mb-2" style="">Explore</span>
+<a class="text-[#5f5e5e] hover:underline underline-offset-8 transition-all w-fit" href="#" style="">Instagram</a>
+<a class="text-[#5f5e5e] hover:underline underline-offset-8 transition-all w-fit" href="#" style="">Pinterest</a>
+<a class="text-[#5f5e5e] hover:underline underline-offset-8 transition-all w-fit" href="#" style="">Journal</a>
+<a class="text-[#5f5e5e] hover:underline underline-offset-8 transition-all w-fit" href="#" style="">Terms</a>
+</div>
+<!-- Newsletter -->
+<div class="flex flex-col gap-4">
+<span class="font-label text-[0.625rem] uppercase tracking-widest text-on-surface-variant mb-2" style="">Join the Atelier</span>
+<div class="relative w-full border-b border-outline-variant/30 pb-2">
+<input class="bg-transparent border-none w-full font-label text-[0.6875rem] tracking-widest focus:ring-0 placeholder:text-outline-variant/60 uppercase" placeholder="YOUR EMAIL" type="email">
+<button class="absolute right-0 top-1/2 -translate-y-1/2" style="">
+<span class="material-symbols-outlined text-on-surface-variant" style="">arrow_forward</span>
+</button>
+</div>
+<p class="text-[0.625rem] text-on-surface-variant tracking-wider uppercase" style="">Receive rare updates and private collection access.</p>
+</div>
+</div>
+<div class="px-12 md:px-24 flex flex-col md:flex-row justify-between items-center pt-12 border-t border-outline-variant/10">
+<p class="font-label text-[0.625rem] tracking-widest text-[#5f5e5e] uppercase" style="">© 2024 MIROVA ATELIER. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8 mt-6 md:mt-0">
+<span class="font-label text-[0.625rem] tracking-widest text-[#5f5e5e] uppercase cursor-pointer hover:text-on-surface" style="">Back to top</span>
+</div>
+</div>
+</footer>
+</body></html>
