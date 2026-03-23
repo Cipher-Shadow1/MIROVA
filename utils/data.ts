@@ -229,7 +229,8 @@ export const products: Product[] = [
         name: "Monolith Chair",
         tagline: "Ocean velvet wrapped in tapered oak",
         price: 299,
-        image: "/images/hero.svg",
+        image:
+          "https://res.cloudinary.com/dgmh3elio/image/upload/v1774187638/hero_page_1_rzox05.svg",
         alt: "Deep blue velvet chair with oak legs",
       },
       {
@@ -253,7 +254,8 @@ export const products: Product[] = [
     price: 299,
 
     // Save the uploaded image as /images/monolith_chair.jpg in your /public folder
-    image: "/images/hero.svg",
+    image:
+      "https://res.cloudinary.com/dgmh3elio/image/upload/v1774187638/hero_page_1_rzox05.svg",
     alt: "Deep ocean-blue velvet dining chair with curved backrest and tapered oak legs",
     featured: true,
 
@@ -270,8 +272,14 @@ export const products: Product[] = [
       "FSC-certified oak legs. Velvet woven from recycled PET fibres. Zero chrome tanning.",
 
     thumbnails: [
-      { src: "/images/monolith_thumb1.svg", alt: "Front view" },
-      { src: "/images/monolith_thumb2.svg", alt: "Side profile" },
+      {
+        src: "https://res.cloudinary.com/dgmh3elio/image/upload/v1774235148/monthilic_1_oyqj9j.png",
+        alt: "Front view",
+      },
+      {
+        src: "https://res.cloudinary.com/dgmh3elio/image/upload/v1774235148/monthilic_2_irshgh.png",
+        alt: "Side profile",
+      },
     ],
 
     atelierNote:
