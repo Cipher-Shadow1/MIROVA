@@ -82,7 +82,7 @@ export default function SelectedWorks() {
                 </div>
 
                 <p className="text-secondary whitespace-nowrap">
-                  ${product.price.toLocaleString()}
+                  دج {product.price}
                 </p>
               </div>
             </Link>

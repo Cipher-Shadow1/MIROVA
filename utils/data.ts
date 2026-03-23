@@ -11,7 +11,7 @@ export type RelatedProduct = {
   slug: string;
   name: string;
   tagline: string;
-  price: number;
+  price: string;
   image: string;
   alt: string;
 };
@@ -22,7 +22,7 @@ export type Product = {
 
   category: string;
   name: string;
-  price: number;
+  price: string;
 
   image: string;
   alt: string;
@@ -57,7 +57,7 @@ export const products: Product[] = [
     slug: "vessel-chair",
     category: "Seating",
     name: "VESSEL CHAIR",
-    price: 200,
+    price: "5,900",
 
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232046/4ba779ea-2292-4c66-8768-aa1045a619f1.png",
@@ -95,15 +95,16 @@ export const products: Product[] = [
         slug: "monolith-chair",
         name: "Monolith Chair",
         tagline: "Ocean velvet wrapped in tapered oak",
-        price: 299,
-        image: "/images/hero.svg",
+        price: "9,000",
+        image:
+          "https://res.cloudinary.com/dgmh3elio/image/upload/v1774187638/hero_page_1_rzox05.svg",
         alt: "Deep blue velvet chair with oak legs",
       },
       {
         slug: "travertine-plinth",
         name: "Travertine Plinth",
         tagline: "Raw earth-formed table",
-        price: 599,
+        price: "72,000",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774228349/table_1_ieuzvz.png",
         alt: "Travertine table",
@@ -112,7 +113,7 @@ export const products: Product[] = [
         slug: "lumen-arc",
         name: "Lumen Arc",
         tagline: "Minimal brass pendant",
-        price: 80,
+        price: "6,900",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232577/851637fe-ac6b-4866-9560-a18eb45f4d5f.png",
         alt: "Pendant light",
@@ -125,7 +126,7 @@ export const products: Product[] = [
     slug: "travertine-plinth",
     category: "Living",
     name: "TRAVERTINE PLINTH TABLE",
-    price: 599,
+    price: "72,000",
 
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774228349/table_1_ieuzvz.png",
@@ -166,16 +167,16 @@ export const products: Product[] = [
         slug: "vessel-chair",
         name: "Vessel Chair",
         tagline: "A body-formed oak lounge silhouette",
-        price: 200,
+        price: "5,900",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232046/4ba779ea-2292-4c66-8768-aa1045a619f1.png",
-        alt: "Travertine table",
+        alt: "Modern sculptural lounge chair",
       },
       {
         slug: "lumen-arc",
         name: "Lumen Arc",
         tagline: "Minimal brass pendant",
-        price: 80,
+        price: "6,900",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232577/851637fe-ac6b-4866-9560-a18eb45f4d5f.png",
         alt: "Pendant light",
@@ -188,7 +189,7 @@ export const products: Product[] = [
     slug: "lumen-arc",
     category: "Lighting",
     name: "LUMEN ARC LAMP",
-    price: 70,
+    price: "6,900",
 
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232577/851637fe-ac6b-4866-9560-a18eb45f4d5f.png",
@@ -228,7 +229,7 @@ export const products: Product[] = [
         slug: "monolith-chair",
         name: "Monolith Chair",
         tagline: "Ocean velvet wrapped in tapered oak",
-        price: 299,
+        price: "9,000",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774187638/hero_page_1_rzox05.svg",
         alt: "Deep blue velvet chair with oak legs",
@@ -237,7 +238,7 @@ export const products: Product[] = [
         slug: "travertine-plinth",
         name: "Travertine Plinth",
         tagline: "Raw earth-formed table",
-        price: 599,
+        price: "72,000",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774228349/table_1_ieuzvz.png",
         alt: "Travertine table",
@@ -245,15 +246,13 @@ export const products: Product[] = [
     ],
   },
 
-  // ── NEW ─────────────────────────────────────
   {
     id: "4",
     slug: "monolith-chair",
     category: "Seating",
     name: "THE MONOLITH CHAIR",
-    price: 299,
+    price: "9,000",
 
-    // Save the uploaded image as /images/monolith_chair.jpg in your /public folder
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774187638/hero_page_1_rzox05.svg",
     alt: "Deep ocean-blue velvet dining chair with curved backrest and tapered oak legs",
@@ -294,24 +293,25 @@ export const products: Product[] = [
         slug: "vessel-chair",
         name: "Vessel Chair",
         tagline: "A body-formed oak lounge silhouette",
-        price: 3100,
-        image: "/images/vessel_chair.jpg",
+        price: "5,900",
+        image:
+          "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232046/4ba779ea-2292-4c66-8768-aa1045a619f1.png",
         alt: "Modern sculptural lounge chair",
       },
       {
         slug: "travertine-plinth",
         name: "Travertine Plinth",
         tagline: "Raw earth-formed table",
-        price: 599,
+        price: "72,000",
         image:
-          "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232046/4ba779ea-2292-4c66-8768-aa1045a619f1.png",
+          "https://res.cloudinary.com/dgmh3elio/image/upload/v1774228349/table_1_ieuzvz.png",
         alt: "Travertine table",
       },
       {
         slug: "lumen-arc",
         name: "Lumen Arc",
         tagline: "Minimal brass pendant",
-        price: 80,
+        price: "6,900",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232577/851637fe-ac6b-4866-9560-a18eb45f4d5f.png",
         alt: "Pendant light",
@@ -324,7 +324,7 @@ export const products: Product[] = [
     slug: "silica-vase",
     category: "Decor",
     name: "SILICA VASE",
-    price: 150,
+    price: "18,500",
 
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774230667/silica-vase_1_ol6afd.svg",
@@ -364,7 +364,7 @@ export const products: Product[] = [
         slug: "travertine-plinth",
         name: "Travertine Plinth",
         tagline: "Raw earth-formed table",
-        price: 599,
+        price: "72,000",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774228349/table_1_ieuzvz.png",
         alt: "Travertine table",
@@ -377,7 +377,7 @@ export const products: Product[] = [
     slug: "obsidian-mirror",
     category: "Decor",
     name: "OBSIDIAN MIRROR",
-    price: 420,
+    price: "52,000",
 
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774231072/3dbbfbc1-84ae-4539-96a3-b90a0670e1b3.png",
@@ -418,7 +418,7 @@ export const products: Product[] = [
         slug: "lumen-arc",
         name: "Lumen Arc",
         tagline: "Minimal brass pendant",
-        price: 80,
+        price: "6,900",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774232577/851637fe-ac6b-4866-9560-a18eb45f4d5f.png",
         alt: "Pendant light",
@@ -431,7 +431,7 @@ export const products: Product[] = [
     slug: "linen-lumbar",
     category: "Textiles",
     name: "LINEN LUMBAR CUSHION",
-    price: 95,
+    price: "9,900",
 
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774231426/e85e9f3d-29cf-4acd-ac76-539ccedbeb2d.png",
@@ -472,8 +472,9 @@ export const products: Product[] = [
         slug: "monolith-chair",
         name: "Monolith Chair",
         tagline: "Ocean velvet wrapped in tapered oak",
-        price: 299,
-        image: "/images/hero.svg",
+        price: "9,000",
+        image:
+          "https://res.cloudinary.com/dgmh3elio/image/upload/v1774187638/hero_page_1_rzox05.svg",
         alt: "Velvet chair",
       },
     ],
@@ -484,7 +485,7 @@ export const products: Product[] = [
     slug: "cast-iron-candlestick",
     category: "Decor",
     name: "CAST IRON CANDLESTICK",
-    price: 65,
+    price: "7,500",
 
     image:
       "https://res.cloudinary.com/dgmh3elio/image/upload/v1774231656/ed15af56-1338-4d2a-8cb4-f2ffd7d743bd.png",
@@ -525,7 +526,7 @@ export const products: Product[] = [
         slug: "travertine-plinth",
         name: "Travertine Plinth",
         tagline: "Raw earth-formed table",
-        price: 599,
+        price: "72,000",
         image:
           "https://res.cloudinary.com/dgmh3elio/image/upload/v1774228349/table_1_ieuzvz.png",
         alt: "Travertine table",

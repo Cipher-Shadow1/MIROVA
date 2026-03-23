@@ -68,7 +68,7 @@ export default async function ProductPage({
   if (!product) notFound();
 
   return (
-    <main className="pt-24 pb-20 md:pt-48 md:pb-24">
+    <main className="pt-15 pb-20 md:pt-15 md:pb-20">
       <div className="max-w-[1920px] mx-auto px-5 md:px-20">
         {/* ── Breadcrumb ── */}
         <nav className="mb-8 md:mb-12">
@@ -132,7 +132,7 @@ export default async function ProductPage({
             </div>
 
             <p className="text-3xl sm:text-4xl md:text-5xl font-light text-on-surface mb-6 md:mb-8 tracking-wider">
-              ${product.price.toLocaleString()}
+              دج {product.price}
             </p>
 
             <div className="h-[1px] w-full bg-outline-variant/20 mb-6 md:mb-8" />

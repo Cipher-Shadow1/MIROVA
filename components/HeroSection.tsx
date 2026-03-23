@@ -46,7 +46,7 @@ export default function HeroSection() {
               delay={0.2}
               className="text-base md:text-lg font-body text-secondary"
             >
-              $2,450
+              دج 9,000
             </FadeText>
           </div>
           <div className="flex flex-col gap-3">
