@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="max-w-5xl text-center mb-16 md:mb-24 px-2">
         <FadeText
           as="h1"
-          className="text-4xl md:text-7xl font-headline leading-[1.1] tracking-tighter text-on-surface"
+          className="text-4xl md:text-7xl font-['Bulgatti'] leading-[1.1] tracking-wider text-on-surface"
         >
           Where Silence Shapes the Finest Forms.
         </FadeText>
@@ -21,7 +21,7 @@ export default function HeroSection() {
           <Image
             className="w-full h-full object-cover"
             alt="Minimalist high-end interior architecture with sunlight and shadows"
-            src="./images/hero.svg"
+            src="https://res.cloudinary.com/dgmh3elio/image/upload/v1774187638/hero_page_1_rzox05.svg"
             fill
             sizes="100vw"
             priority
