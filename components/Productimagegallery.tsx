@@ -29,11 +29,11 @@ export function ProductImageGallery({
   return (
     <div className="flex flex-col gap-4 md:gap-8">
       {/* ── Main Image ── */}
-      <div className="bg-surface-container-low w-full overflow-hidden aspect-[4/3] md:aspect-auto md:h-[70vh]">
+      <div className="bg-transparent w-full overflow-hidden aspect-[4/3] md:aspect-auto md:h-[70vh] flex items-center justify-center">
         <ImageWithFallback
           src={activeImage.src}
           alt={activeImage.alt}
-          className="w-full h-full object-cover transition-opacity duration-300"
+          className="w-full h-full object-contain transition-opacity duration-300"
         />
       </div>
 

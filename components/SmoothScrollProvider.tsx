@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "lenis";
+import { usePathname } from "next/navigation";
 
 export default function SmoothScrollProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const lenisRef = useRef<Lenis | null>(null);
+
   useEffect(() => {
     const lenis = new Lenis({
       // ── Feel ──────────────────────────────────────────
@@ -28,17 +32,50 @@ export default function SmoothScrollProvider({
       wheelMultiplier: 0.9,
       touchMultiplier: 1.5,
     });
+    
+    lenisRef.current = lenis;
+
+    let rafId: number;
 
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
+    
+    // Create a ResizeObserver to observe changes in the document body's size
+    const resizeObserver = new ResizeObserver(() => {
+        lenis.resize();
+    });
+    
+    resizeObserver.observe(document.body);
 
     return () => {
+      cancelAnimationFrame(rafId);
+      resizeObserver.disconnect();
       lenis.destroy();
+      lenisRef.current = null;
     };
   }, []);
+
+  useEffect(() => {
+    // Reset scroll position using Lenis to prevent it from saving the old scroll pos
+    if (lenisRef.current) {
+        lenisRef.current.scrollTo(0, { immediate: true });
+    } else {
+        window.scrollTo(0, 0);
+    }
+
+    // Force lenis to recalculate heights when route changes
+    // Add a small delay to ensure DOM is fully painted
+    const timeoutId = setTimeout(() => {
+        if (lenisRef.current) {
+            lenisRef.current.resize();
+        }
+    }, 100);
+    
+    return () => clearTimeout(timeoutId);
+  }, [pathname]);
 
   return <>{children}</>;
 }
