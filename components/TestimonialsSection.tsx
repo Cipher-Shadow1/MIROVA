@@ -7,7 +7,8 @@ const testimonials = [
       "The Monolith Chair has transformed my study. It's rare to find a piece that is both a sculptural statement and incredibly comfortable for long evenings of reading.",
     name: "Julian Thorne",
     title: "Interior Architect",
-    image: "/images/profile1.svg",
+    image:
+      "https://res.cloudinary.com/dgmh3elio/image/upload/v1774280421/profile1_l28l0f.svg",
     dark: false,
   },
   {
@@ -16,7 +17,8 @@ const testimonials = [
       "Mirova is the antithesis of fast furniture. The attention to detail in the Lumen Arc lighting is something you have to see in person to truly appreciate the craftsmanship.",
     name: "Elena Rossi",
     title: "Art Curator",
-    image: "/images/profile2.svg",
+    image:
+      "https://res.cloudinary.com/dgmh3elio/image/upload/v1774280501/profile2_mhyifj.svg",
     dark: true,
   },
 ];

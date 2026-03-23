@@ -79,7 +79,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="px-12 md:px-24 flex flex-col md:flex-row justify-between items-center pt-12 border-t border-outline-variant/10">
+      <div className="px-12 md:px-24 flex flex-col items-center pt-12 border-t border-outline-variant/10 gap-4">
+        <a
+          href="https://rahmoun-rayan-abderrahim.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-label text-[0.5625rem] tracking-[0.15rem] text-[#8a8988] uppercase hover:text-[#5f5e5e] transition-colors duration-300"
+        >
+          Designed & Developed by Rayan Abderrahim Rahmoun
+        </a>
+        <div className="flex flex-col md:flex-row justify-between items-center w-full">
         <p className="font-label text-[0.625rem] tracking-widest text-[#5f5e5e] uppercase">
           © 2024 MIROVA ATELIER. ALL RIGHTS RESERVED.
         </p>
@@ -90,6 +99,7 @@ export default function Footer() {
           >
             Back to top
           </span>
+        </div>
         </div>
       </div>
     </footer>

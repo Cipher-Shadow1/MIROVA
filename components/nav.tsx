@@ -1,9 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+const announcements = [
+  "⚡ CONCEPT STORE — Cart & Checkout are disabled for demo purposes",
+  "✦ Designed & Developed by Rayan Abderrahim Rahmoun",
+];
 
 export default function Nav() {
+  const [announcementIndex, setAnnouncementIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnnouncementIndex((prev) => (prev + 1) % announcements.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const element = document.getElementById(id);
@@ -20,8 +34,11 @@ export default function Nav() {
     <>
       {/* Top Marquee */}
       <div className="w-full bg-surface-container-low py-3 flex justify-center items-center overflow-hidden">
-        <p className="font-label text-[0.625rem] tracking-[0.2rem] text-on-surface-variant uppercase">
-          RESERVED FOR YOUR FIRST ORDER ✦ A 10% WELCOME PRIVILEGE
+        <p
+          className="font-label text-[0.625rem] tracking-[0.2rem] text-on-surface-variant uppercase transition-opacity duration-500"
+          key={announcementIndex}
+        >
+          {announcements[announcementIndex]}
         </p>
       </div>
 
