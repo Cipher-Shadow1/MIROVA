@@ -1,6 +1,6 @@
 # Mirova Studio
 
-![Mirova Studio Presentation](public/images/hero.svg)
+![Mirova Studio Presentation](./presentation.png)
 
 ## Where Silence Shapes the Finest Forms
 
@@ -17,19 +17,24 @@ The design language of Mirova is an exercise in reduction, stripping away the su
 The digital experience is crafted sequentially into distinct, curated sections:
 
 #### I. The Monolith
+
 A grand introduction to the studio. Here, the visitor is greeted with high-impact imagery and the foundational philosophy of Mirova—setting the tone for a deep, textural experience.
 
 #### II. The Philosophy (Editorial Feature)
-*"Reduction as Artistry."*
+
+_"Reduction as Artistry."_
 A narrative-driven section dissecting the dialogue between raw material and refined geometry. This space transitions the user from an observer to an appreciator of the craft.
 
 #### III. Selected Works
+
 A curated exhibition of our signature pieces. This gallery highlights our focus on sustainable solid woods, rare Italian travertines, and full-grain aniline leathers.
 
 #### IV. The Atelier
-An immersive look into our process: *Design Begins With You — and Ends in Timeless Form.* Here, we delve into the execution, exploring the sixty hours of hand-finishing and the master artisans who dedicate their lives to this craft.
+
+An immersive look into our process: _Design Begins With You — and Ends in Timeless Form._ Here, we delve into the execution, exploring the sixty hours of hand-finishing and the master artisans who dedicate their lives to this craft.
 
 #### V. Impressions
+
 Stories of transformation from our patrons, echoing the quiet authority and lasting impact a singular piece of furniture can bring into a space.
 
 ---
@@ -42,4 +47,4 @@ This project is an exercise in digital artistry, translating physical craftsmans
 - **Kinetic Elegance:** Purposefully subtle scroll animations and fade reveals ensure the digital medium matches the physical craftsmanship.
 - **Architectural Layouts:** Generous negative space, asymmetric editorial features, and quiet grids that let the work speak for itself.
 
-*Mirova is more than furniture; it is an enduring philosophy written in solid form.*
+_Mirova is more than furniture; it is an enduring philosophy written in solid form._
