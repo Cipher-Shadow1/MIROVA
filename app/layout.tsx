@@ -64,6 +64,32 @@ export default function RootLayout({
           {children}
           <Footer />
         </SmoothScrollProvider>
+        {/* Fixed Watermark Badge */}
+        <a
+          href="https://rahmoun-rayan-abderrahim.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            left: "20px",
+            zIndex: 9999,
+            background: "rgba(26, 26, 26, 0.75)",
+            backdropFilter: "blur(8px)",
+            border: "1px solid #b39c6e",
+            borderRadius: "999px",
+            padding: "8px 16px",
+            color: "#d4c5a0",
+            fontSize: "0.65rem",
+            fontFamily: "var(--font-manrope)",
+            letterSpacing: "0.08rem",
+            textTransform: "uppercase" as const,
+            textDecoration: "none",
+            whiteSpace: "nowrap",
+          }}
+        >
+          ⚡ Built by Cipher · View Portfolio
+        </a>
       </body>
     </html>
   );
